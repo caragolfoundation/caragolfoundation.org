@@ -2,14 +2,9 @@
 import Grid from "~/components/blog/Grid.astro";
 
 import { findPostsByIds } from "~/utils/posts";
+import config from "~/config/config.json";
 
-const ids = [
-  "about",
-  "useful-resources-to-create-websites",
-  "astrowind-template-in-depth",
-  "how-to-customize-astrowind-to-your-brand",
-];
-const posts = await findPostsByIds(ids);
+const posts = await findPostsByIds(config.featuredBlogPosts);
 ---
 
 <section class="px-4 py-16 mx-auto max-w-6xl lg:py-20">
