@@ -1,48 +1,6 @@
 ---
 import { Icon } from "astro-icon";
-
-const items = [
-  [
-    {
-      title: "The Environment",
-      description:
-        "Environmental sustainability and conservation is a key focus of the Foundation. We are committed to protecting the environment and the planet for future generations.",
-      icon: "tabler:plant",
-    },
-    {
-      title: "Education",
-      description:
-        "Education is a key focus of the Foundation. We are committed to providing education to those who need it most.",
-      icon: "tabler:book",
-    },
-    {
-      title: "Vulnerable Populations",
-      description:
-        "Vulnerable populations often go without the basic necessities of life. We are committed to providing support to those who need it most.",
-      icon: "tabler:heart",
-    },
-  ],
-  [
-    {
-      title: "Peace and Justice",
-      description:
-        "Peace and justice are key to a healthy society. We are committed to promoting peace and justice in our communities.",
-      icon: "tabler:peace",
-    },
-    {
-      title: "XYZ",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.",
-      icon: "tabler:arrows-right-left",
-    },
-    {
-      title: "ABC",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.",
-      icon: "tabler:bulb",
-    },
-  ],
-];
+import config from "~/config/config.json";
 ---
 
 <section class="scroll-mt-16" id="features">
@@ -51,23 +9,22 @@ const items = [
       <p
         class="text-base text-primary-600 dark:text-primary-200 font-semibold tracking-wide uppercase"
       >
-        Mission Goals
+        {config.missionMiniText}
       </p>
       <h2
         class="text-4xl md:text-5xl font-bold leading-tighter tracking-tighter mb-4 font-heading"
       >
-        What are the Goals of the Foundation?
+        {config.missionMainText}
       </h2>
       <p
         class="max-w-3xl mx-auto sm:text-center text-xl text-gray-600 dark:text-slate-400"
       >
-        The following areas are the main goals of the Foundation and our primary
-        focus.
+        {config.missionSubText}
       </p>
     </div>
     <div class="grid mx-auto space-y-6 md:grid-cols-2 md:space-y-0">
       {
-        items.map((subitems) => (
+        config.missionGoals.map((subitems) => (
           <div class="space-y-8 sm:px-8">
             {subitems.map(({ title, description, icon }) => (
               <div class="flex flex-row max-w-md">

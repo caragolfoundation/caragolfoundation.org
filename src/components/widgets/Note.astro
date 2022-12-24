@@ -1,5 +1,6 @@
 ---
 import { Icon } from "astro-icon";
+import config from "~/config/config.json";
 ---
 
 <section class="bg-primary-100 dark:bg-slate-800">
@@ -9,6 +10,6 @@ import { Icon } from "astro-icon";
     <span class="font-bold">
       <Icon name="tabler:star" class="w-5 h-5 inline-block align-text-bottom" />
       Mission:</span
-    > Protect and conserve the environment, as well as support vulnerable populations
+    > {config.mission}
   </div>
 </section>
