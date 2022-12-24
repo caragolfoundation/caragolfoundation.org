@@ -46,5 +46,7 @@
         "useful-resources-to-create-websites",
         "astrowind-template-in-depth",
         "how-to-customize-astrowind-to-your-brand"
-    ]
+    ],
+    "contactDescription": "Contact information for the Caragol Foundation",
+    "contactInformation": "The best way to get in contact with us is via email: <insert email here>"
 }
