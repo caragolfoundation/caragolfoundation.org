@@ -1,5 +1,6 @@
 ---
 import { Icon } from "astro-icon";
+import config from "~/config/config.json";
 ---
 
 <section>
@@ -24,7 +25,7 @@ import { Icon } from "astro-icon";
               <div class="w-full">
                 <a
                   class="btn btn-primary mb-4 sm:mb-0"
-                  href="https://github.com/caragolfoundation"
+                  href={config.github}
                   target="_blank"
                   rel="noopener"
                 >

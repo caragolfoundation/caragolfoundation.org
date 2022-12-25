@@ -1,5 +1,6 @@
 ---
 import { Icon } from "astro-icon";
+import config from "~/config/config.json";
 // import { getHomePermalink, getRelativeLink } from "~/utils/permalinks";
 
 // const links = [
@@ -57,7 +58,7 @@ const social = [
   {
     label: "GitHub",
     icon: "tabler:brand-github",
-    href: "https://github.com/caragolfoundation",
+    href: config.github,
   },
 ];
 ---
