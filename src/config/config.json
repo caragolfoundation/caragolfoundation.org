@@ -48,5 +48,24 @@
         "how-to-customize-astrowind-to-your-brand"
     ],
     "contactDescription": "Contact information for the Caragol Foundation",
-    "contactInformation": "The best way to get in contact with us is via email: <insert email here>"
+    "contactInformation": "The best way to get in contact with us is via email: <insert email here>",
+    "stepsHeader": "How we Operate",
+    "steps": [
+        {
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenati lobortis, mi risus tempus nulla, sed",
+            "icon": "tabler:arrow-down"
+        },
+        {
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenati lobortis, mi risus tempus nulla, sed",
+            "icon": "tabler:arrow-down"
+        },
+        {
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenati lobortis, mi risus tempus nulla, sed",
+            "icon": "tabler:arrow-down"
+        },
+        {
+            "text": "Ready!",
+            "icon": "tabler:check"
+        }
+    ]
 }
