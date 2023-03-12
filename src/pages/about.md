@@ -3,6 +3,8 @@ title: 'About'
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 
+![hands-on-tree](/assets/hands-on-tree.jpg)
+
 The Caragol Foundation is a 501(c) nonprofit organization with a mission to protect and conserve the environment, as well as support vulnerable populations. We believe that by working together, we can make a positive impact on the world and create a better future for all.
 
 Our foundation is dedicated to supporting initiatives that promote sustainability, protect natural resources, and educate communities about the importance of environmental conservation. We also believe in supporting programs that help vulnerable populations, such as children and families in need, refugees, and marginalized communities.
