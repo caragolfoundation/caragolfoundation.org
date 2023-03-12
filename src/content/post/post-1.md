@@ -1,13 +1,14 @@
 ---
 publishDate: 2023-01-06T00:00:00Z
-title: How to customize AstroWind template to suit your branding
+title: Example Post 1
 excerpt: Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur.
 image: ~/assets/images/colors.jpg
 tags:
-  - astro
-  - tailwind css
-  - theme
-canonical: https://astrowind.vercel.app/how-to-customize-astrowind-to-your-brand
+  - project
+  - blog
+  - environment
+canonical: https://caragolfoundation.org/post-1
+draft: false
 ---
 
 ## Congue justo vulputate nascetur convallis varius orci fringilla nulla pharetr
