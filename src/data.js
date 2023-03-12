@@ -34,7 +34,9 @@ export const footerData = {
     },
     {
       title: 'Projects',
-      links: [],
+      links: [
+        { text: 'Coming soon...', href: '#' },
+      ],
     },
     {
       title: 'Contact',
