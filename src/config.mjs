@@ -1,38 +1,61 @@
-export const SITE = {
-	name: 'caragolfoundation',
+import defaultImage from './assets/images/default.png';
 
-	origin: 'https://caragolfoundation.org',
-	basePathname: '/',
-	trailingSlash: false,
+const CONFIG = {
+  name: 'caragolfoundation',
 
-	title: 'CaragolFoundation — The Caragol Family Foundation',
-	description: 'TODO - Add a description',
+  origin: 'https://caragolfoundation.org',
+  basePathname: '/',
+  trailingSlash: false,
 
-	googleAnalyticsId: false, // or "G-XXXXXXXXXX",
-	googleSiteVerificationId: '<empty>',
+  title: 'CaragolFoundation — The Caragol Family Foundation',
+  description: 'TODO - Add a description',
+  defaultImage: defaultImage,
+
+  defaultTheme: 'system', // Values: "system" | "light" | "dark" | "light:only" | "dark:only"
+
+  language: 'en',
+  textDirection: 'ltr',
+
+  dateFormatter: new Intl.DateTimeFormat('en', {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric',
+    timeZone: 'UTC',
+  }),
+
+  googleAnalyticsId: false, // or "G-XXXXXXXXXX",
+  googleSiteVerificationId: '<empty>',
+
+  blog: {
+    disabled: false,
+    postsPerPage: 4,
+
+    post: {
+      permalink: '/%slug%', // Variables: %slug%, %year%, %month%, %day%, %hour%, %minute%, %second%, %category%
+      noindex: false,
+      disabled: false,
+    },
+
+    list: {
+      pathname: 'blog', // Blog main path, you can change this to "articles" (/articles)
+      noindex: false,
+      disabled: false,
+    },
+
+    category: {
+      pathname: 'category', // Category main path /category/some-category
+      noindex: true,
+      disabled: false,
+    },
+
+    tag: {
+      pathname: 'tag', // Tag main path /tag/some-tag
+      noindex: true,
+      disabled: false,
+    },
+  },
 };
 
-export const BLOG = {
-	disabled: false,
-	postsPerPage: 4,
-
-	blog: {
-		disabled: false,
-		pathname: 'blog', // blog main path, you can change this to "articles" (/articles)
-	},
-
-	post: {
-		disabled: false,
-		pathname: '', // empty for /some-post, value for /pathname/some-post
-	},
-
-	category: {
-		disabled: false,
-		pathname: 'category', // set empty to change from /category/some-category to /some-category
-	},
-
-	tag: {
-		disabled: false,
-		pathname: 'tag', // set empty to change from /tag/some-tag to /some-tag
-	},
-};
+export const SITE = { ...CONFIG, blog: undefined };
+export const BLOG = CONFIG.blog;
+export const DATE_FORMATTER = CONFIG.dateFormatter;
