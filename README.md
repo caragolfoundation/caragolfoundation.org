@@ -6,7 +6,50 @@ The public [caragolfoundation.org](https://caragolfoundation.org) website and so
 
 ## General Edits 📝
 
-General edits to the website's text can be accomplished mainly through the [`config.json`](src/config/config.json) file. This file contains the majority of the text on the homepage and contact page. You can also control which blog posts are "featured" on the homepage through this file. It does **not** contain any of the text related to blog posts.
+Brief documentation section around general website edits
+
+### Common Files 📁
+
+Here are some links to common files you may wish to edit and why:
+
+- [`src/content/post/*.md`](src/content/post/) - Blog posts
+- [`src/data.js`](src/data.js) - Footer and header links / data
+- [`src/config.mjs`](src/config.mjs) - Site configuration
+- [`src/pages/index.astro`](src/pages/index.astro) - Home page
+- [`src/pages/about.md`](src/pages/about.md) - About page
+- [`src/pages/contact.md`](src/pages/contact.md) - Contact page
+
+### Images 🖼️
+
+Images for `.md` files that are not blog posts are stored in the [`public/assets/`](public/assets/) directory.
+
+Images for `.md|.mdx` blog posts, and other `.astro` files are stored in the [`src/assets/images/`](src/assets/images/) directory.
+
+### Creating a New Page 📄
+
+If you wish to create a new page, you have two options: advanced or simple.
+
+#### Simple Pages 📄
+
+Create a new `.md` in the `src/pages/` directory. This will create a new page with the same name as the file. For example, if you create a file called `example.md`, you will have a page at `/example` with the contents of `example.md`.
+
+If you want to link out to this page from a `.astro` file, you can use the `getPermalink` function like so:
+
+```astro
+<a href={getPermalink('/example')}>Example Page</a>
+```
+
+You can also link out to this page from `.js` files where the `getPermalink` function is available. For example, in the `src/data.js` file:
+
+```js
+href: getPermalink('/example')
+```
+
+#### Advanced Pages 📄
+
+If you want, you can also fully construct pages by using `.astro` files. This is useful if you want to use Astro components or other advanced features.
+
+You best place is the official [Astro documentation](https://docs.astro.build/en/getting-started/)
 
 ## Blog Posts 📔
 
