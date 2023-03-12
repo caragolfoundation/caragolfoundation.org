@@ -6,16 +6,8 @@ export const headerData = {
       text: 'Pages',
       links: [
         {
-          text: 'Features',
-          href: '#',
-        },
-        {
-          text: 'Pricing',
-          href: '#',
-        },
-        {
-          text: 'About us',
-          href: '#',
+          text: 'About',
+          href: getPermalink('/about'),
         },
         {
           text: 'Contact',
