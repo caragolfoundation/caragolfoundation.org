@@ -25,37 +25,26 @@ export const headerData = {
 export const footerData = {
   links: [
     {
-      title: 'Product',
+      title: 'Resoures',
       links: [
-        { text: 'Features', href: '#' },
-        { text: 'Security', href: '#' },
         { text: 'Team', href: '#' },
-        { text: 'Resources', href: '#' },
+        { text: 'Blog', href: getBlogPermalink() },
+        { text: 'Open Source', href: 'https://github.com/caragolfoundation' },
       ],
     },
     {
-      title: 'Platform',
-      links: [
-        { text: 'Developer API', href: '#' },
-        { text: 'Partners', href: '#' },
-        { text: 'Atom', href: '#' },
-        { text: 'Electron', href: '#' },
-        { text: 'AstroWind Desktop', href: '#' },
-      ],
+      title: 'Projects',
+      links: [],
     },
     {
-      title: 'Support',
+      title: 'Contact',
       links: [
-        { text: 'Docs', href: '#' },
-        { text: 'Community Forum', href: '#' },
-        { text: 'Professional Services', href: '#' },
-        { text: 'Skills', href: '#' },
-        { text: 'Status', href: '#' },
+        { text: 'Contact Page', href: getPermalink('/contact') },
       ],
     }
   ],
   secondaryLinks: [
-    { text: 'Terms', href: getPermalink('/terms') },
+    // { text: 'Terms', href: getPermalink('/terms') },
     { text: 'Privacy Policy', href: getPermalink('/privacy') },
   ],
   socialLinks: [
