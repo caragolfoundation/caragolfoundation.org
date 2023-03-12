@@ -10,37 +10,47 @@ General edits to the website's text can be accomplished mainly through the [`con
 
 ## Blog Posts 📔
 
-Blog posts are written in markdown and stored in the [`data/blog`](data/blog/) directory.
+Blog posts are written in markdown and stored in the [`src/content/post`](src/content/post/) directory.
 
 To create a new blog post, follow the general steps below:
 
-1. Create a new markdown file in the [`data/blog/`](data/blog/) directory (ensure the filename is unique)
+1. Create a new markdown file (`<name>.md`) in the [`src/content/post`](src/content/post/) directory (ensure the filename is unique)
 2. Add a header section to your blog post with some details (example below)
 
    ```markdown
-    ---
-    publishDate: 'Aug 08 2022'
-    title: 'My super cool blog post'
-    description: 'This is a description of my super cool blog post'
-    image: '~/assets/images/cool-blog-post.jpg'
-    category: 'Environment'
-    tags: [environment, volunteering, sustainability]
-    ---
+   ---
+   publishDate: 2023-01-06T00:00:00Z
+   title: Example Post 1
+   excerpt: Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur.
+   image: ~/assets/images/colors.jpg
+   tags:
+   - project
+   - blog
+   - environment
+   canonical: https://caragolfoundation.org/post-1
+   draft: false
+   ---
    ```
+
+   > This section is called "frontmatter" in Astro. You can read more about it [here](https://docs.astro.build/en/guides/markdown-content/#frontmatter-layout)
 
 3. Now that you have a header section, you can start writing your blog post in markdown!
 4. When you are done, commit your changes and open a pull request
 
 If you need help with formatting markdown, check out [this guide](https://www.markdownguide.org/cheat-sheet/) for help
 
+It should be noted that you you can use a more advanced version of markdown with `.mdx` extensions. You can do all sorts of wild things with `.mdx` and an example can be found [here](src/content/post/markdown-elements-demo-post.mdx)
+
 ## Development 🔨
 
-This website is a SSR (server-side rendered) [Astro](https://astro.build/) application. To get started with development, follow the steps below:
+This website is a statically built website with [Astro](https://astro.build/). To get started with development, follow the steps below:
 
 1. Clone this repo
 2. Run `npm install`
 3. Run `npm run dev` to start the development server
 
+Your development server should now be running at [`localhost:3000`](http://localhost:3000) and will live reload when changes are made to the source code.
+
 ## Deployment 🚀
 
-This website is deployed to [Netlify](https://www.netlify.com/) and automatically deploys when changes are merged into the `main` branch. However, it is still suggested to commit all changes to a new branch and open a pull request before merging into `main`. This will ensure that all changes are reviewed before being deployed to production. You can also preview your changes since Netlify will automatically deploy a preview of your branch when you open a pull request.
+This website is deployed to [GitHub Pages](https://pages.github.com/) and automatically deploys when changes are merged into the `main` branch. However, it is still suggested to commit all changes to a new branch and open a pull request before merging into `main`. This will ensure that all changes are reviewed before being deployed to production.
