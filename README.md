@@ -1,6 +1,6 @@
 # caragolfoundation.org 🌍
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/f64102bc-a081-4779-9200-2e683dc31f62/deploy-status)](https://app.netlify.com/sites/incomparable-palmier-3b8ef3/deploys)
+[![deploy](https://github.com/caragolfoundation/caragolfoundation.org/actions/workflows/deploy.yml/badge.svg)](https://github.com/caragolfoundation/caragolfoundation.org/actions/workflows/deploy.yml)
 
 The public [caragolfoundation.org](https://caragolfoundation.org) website and source code
 
