@@ -3,4 +3,4 @@ title: 'Contact'
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 
-Contact page
+Email: contact@caragolfoundation.org
