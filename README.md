@@ -54,3 +54,7 @@ Your development server should now be running at [`localhost:3000`](http://local
 ## Deployment 🚀
 
 This website is deployed to [GitHub Pages](https://pages.github.com/) and automatically deploys when changes are merged into the `main` branch. However, it is still suggested to commit all changes to a new branch and open a pull request before merging into `main`. This will ensure that all changes are reviewed before being deployed to production.
+
+## Theme 🎨
+
+This website is based off the [AstroWind](https://github.com/onwidget/astrowind) astro theme
