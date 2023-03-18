@@ -1,23 +1,100 @@
 # caragolfoundation.org 🌍
 
-[![deploy](https://github.com/caragolfoundation/caragolfoundation.org/actions/workflows/deploy.yml/badge.svg)](https://github.com/caragolfoundation/caragolfoundation.org/actions/workflows/deploy.yml)
+[![deploy](https://github.com/caragolfoundation/caragolfoundation.org/actions/workflows/deploy.yml/badge.svg)](https://github.com/caragolfoundation/caragolfoundation.org/actions/workflows/deploy.yml) [![ci](https://github.com/caragolfoundation/caragolfoundation.org/actions/workflows/ci.yml/badge.svg)](https://github.com/caragolfoundation/caragolfoundation.org/actions/workflows/ci.yml) [![lint](https://github.com/caragolfoundation/caragolfoundation.org/actions/workflows/lint.yml/badge.svg)](https://github.com/caragolfoundation/caragolfoundation.org/actions/workflows/lint.yml) [![CodeQL](https://github.com/caragolfoundation/caragolfoundation.org/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/caragolfoundation/caragolfoundation.org/actions/workflows/codeql-analysis.yml)
 
 The public [caragolfoundation.org](https://caragolfoundation.org) website and source code
+
+## Config Files
+
+The core way this template is different from the original is that it heavily uses `.js` config files to configure data and content for its site.
+
+Here are a few common config directories and what you will find there:
+
+- [`src/config/site/*`](src/config/site) - Site configuration
+  - [`config.js`](src/config/site/config.js) - Global site configuration
+  - [`blog.js`](src/config/site/blog.js) - Blog configuration
+- [`src/config/home/*`](src/config/home) - Home page configuration
+  - [`featured-posts.js`](src/config/home/featured-posts.js) - Featured blog posts on the home page
+  - [`hero.js`](src/config/home/hero.js) - Hero component configuration on the home page
+  - [`content.js`](src/config/home/content.js) - Main content component configuration on the home page
+- [`src/config/components/*`](src/config/components) - Component configuration
+  - [`announcement.js`](src/config/components/announcement.js) - Announcement component configuration on all pages
+  - [`footer.js`](src/config/components/footer.js) - Footer component configuration on all pages
+  - [`header.js`](src/config/components/header.js) - Header component configuration on all pages
+  - [`logo.js`](src/config/components/logo.js) - Logo (text) component configuration on all pages
+
+## Project structure
+
+Inside AstroWind template, you'll see the following folders and files:
+
+```text
+/
+├── public/
+│   ├── robots.txt
+│   └── favicon.ico
+├── src/
+│   ├── assets/
+│   │   ├── images/
+│   │   └── styles/
+│   │       └── base.css
+│   ├── components/
+│   │   ├── blog/
+│   │   ├── common/
+│   │   ├── widgets/
+│   │   │   ├── Header.astro
+│   │   │   └── ...
+│   │   ├── CustomStyles.astro
+│   │   └── Logo.astro
+│   ├── config/
+│   │   ├── components/
+|   |   |   ├── announcement.js
+|   |   |   ├── call-to-action.js
+│   │   │   └── ...
+│   │   ├── home/
+|   |   |   ├── content.js
+|   |   |   ├── faqs.js
+│   │   │   └── ...
+│   │   ├── site/
+│   │   │   ├── blog.js
+|   |   |   ├── config.js
+│   │   │   └── ...
+│   ├── content/
+│   │   ├── post/
+│   │   │   ├── post-slug-1.md
+│   │   │   ├── post-slug-2.mdx
+│   │   │   └── ...
+│   │   └-- config.ts
+│   ├── layouts/
+│   │   ├── BaseLayout.astro
+│   │   └── ...
+│   ├── pages/
+│   │   ├── [...blog]/
+│   │   │   ├── [category]/
+│   │   │   ├── [tag]/
+│   │   │   ├── [...page].astro
+│   │   │   └── index.astro
+│   │   ├── index.astro
+│   │   ├── about.md
+│   │   ├── 404.astro
+│   │   ├-- rss.xml.ts
+│   │   └── ...
+│   ├── utils/
+│   ├── config.mjs
+│   └── data.js
+├── package.json
+├── astro.config.mjs
+└── ...
+```
+
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+
+Any static assets, like images, can be placed in the `public/` directory if they do not require any transformation or in the `assets/` directory if they are imported directly.
 
 ## General Edits 📝
 
 Brief documentation section around general website edits
-
-### Common Files 📁
-
-Here are some links to common files you may wish to edit and why:
-
-- [`src/content/post/*.md`](src/content/post/) - Blog posts
-- [`src/data.js`](src/data.js) - Footer and header links / data
-- [`src/config.mjs`](src/config.mjs) - Site configuration
-- [`src/pages/index.astro`](src/pages/index.astro) - Home page
-- [`src/pages/about.md`](src/pages/about.md) - About page
-- [`src/pages/contact.md`](src/pages/contact.md) - Contact page
 
 ### Images 🖼️
 
@@ -42,7 +119,7 @@ If you want to link out to this page from a `.astro` file, you can use the `getP
 You can also link out to this page from `.js` files where the `getPermalink` function is available. For example, in the `src/data.js` file:
 
 ```js
-href: getPermalink('/example')
+href: getPermalink('/example');
 ```
 
 #### Advanced Pages 📄
@@ -67,9 +144,9 @@ To create a new blog post, follow the general steps below:
    excerpt: Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur.
    image: ~/assets/images/colors.jpg
    tags:
-   - project
-   - blog
-   - environment
+     - project
+     - blog
+     - environment
    canonical: https://caragolfoundation.org/post-1
    draft: false
    ---
@@ -84,20 +161,62 @@ If you need help with formatting markdown, check out [this guide](https://www.ma
 
 It should be noted that you you can use a more advanced version of markdown with `.mdx` extensions. You can do all sorts of wild things with `.mdx` and an example can be found [here](src/content/post/markdown-elements-demo-post.mdx)
 
-## Development 🔨
+## Commands
 
-This website is a statically built website with [Astro](https://astro.build/). To get started with development, follow the steps below:
+All commands are run from the root of the project, from a terminal:
 
-1. Clone this repo
-2. Run `npm install`
-3. Run `npm run dev` to start the development server
+| Command               | Action                                             |
+| :-------------------- | :------------------------------------------------- |
+| `npm install`         | Installs dependencies                              |
+| `npm run dev`         | Starts local dev server at `localhost:3000`        |
+| `npm run build`       | Build your production site to `./dist/`            |
+| `npm run preview`     | Preview your build locally, before deploying       |
+| `npm run format`      | Format codes with Prettier                         |
+| `npm run lint:eslint` | Run Eslint                                         |
+| `npm run astro ...`   | Run CLI commands like `astro add`, `astro preview` |
 
-Your development server should now be running at [`localhost:3000`](http://localhost:3000) and will live reload when changes are made to the source code.
+## Development
 
-## Deployment 🚀
+Here are some basic commands to get you up and running to develop with this template:
 
-This website is deployed to [GitHub Pages](https://pages.github.com/) and automatically deploys when changes are merged into the `main` branch. However, it is still suggested to commit all changes to a new branch and open a pull request before merging into `main`. This will ensure that all changes are reviewed before being deployed to production.
+1. Install `npm` dependencies
 
-## Theme 🎨
+   ```bash
+   npm i
+   ```
 
-This website is based off the [AstroWind](https://github.com/onwidget/astrowind) astro theme
+2. Start the development server
+
+   ```bash
+   npm run dev
+   ```
+
+3. View your site at [`localhost:3000`](http://localhost:3000/)
+
+> Live reload is enabled by default, so any changes you make will be reflected in the browser.
+
+## Deployment
+
+> Deployment docs for GitHub Pages
+
+When you `push` changes to this repository, GitHub will automatically build and deploy your site through GitHub Actions + GitHub Pages.
+
+### Branch Deploy
+
+This repository also comes bundled with the [branch-deploy](https://github.com/github/branch-deploy) Action. Please ensure you view the [`branch-deploy.yml`](.github/workflows/branch-deploy.yml) file for reference.
+
+The `branch-deploy` Action will allow you to trigger branch deployments from pull requests by using comments such as `.deploy`.
+
+## Making Changes
+
+This section goes into details on how you can make changes to the template.
+
+## Live Commit Examples
+
+Actual examples in the form of commits to this repository:
+
+- [Adding a new page](https://github.com/grantbirki/astrowind/commit/6836c11a3140181a65f252e3709e398f67e632c4)
+
+## Acknowledgements
+
+This theme is based off the template by [onwidget](https://github.com/onwidget/astrowind)
