@@ -119,7 +119,7 @@ If you want to link out to this page from a `.astro` file, you can use the `getP
 You can also link out to this page from `.js` files where the `getPermalink` function is available. For example, in the `src/data.js` file:
 
 ```js
-href: getPermalink('/example')
+href: getPermalink('/example');
 ```
 
 #### Advanced Pages 📄
@@ -144,9 +144,9 @@ To create a new blog post, follow the general steps below:
    excerpt: Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur.
    image: ~/assets/images/colors.jpg
    tags:
-   - project
-   - blog
-   - environment
+     - project
+     - blog
+     - environment
    canonical: https://caragolfoundation.org/post-1
    draft: false
    ---
