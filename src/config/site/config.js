@@ -5,20 +5,19 @@ import blog from './blog';
 
 const CONFIG = {
   // The name of the website
-  name: 'AstroWind',
+  name: 'caragolfoundation',
   // The origin of the website (without trailing slash)
-  origin: 'https://astro-demo.birki.io',
+  origin: 'https://caragolfoundation.org',
   // The base pathname of the website
   basePathname: '/',
   // If the website uses trailing slashes in the URLs
   trailingSlash: false,
 
   // The website title which is displayed in the browser tab
-  title: 'AstroWind — Free template for create a website with Astro + Tailwind CSS + GitHub Pages',
+  title: 'CaragolFoundation — The Caragol Family Foundation',
 
   // Website description
-  description:
-    '🚀 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs.',
+  description: 'TODO - Add a description',
 
   // The website's preview image that is displayed when sharing the website on social media
   defaultImage: defaultImage,

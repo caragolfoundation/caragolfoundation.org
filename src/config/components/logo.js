@@ -2,7 +2,7 @@
 
 const logo = {
   // The text to be displayed on the top left corner of the page
-  text: 'Astrowind 🚀',
+  text: '🌱 CaragolFoundation',
 };
 
 export default logo;

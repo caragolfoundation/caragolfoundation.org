@@ -1,5 +1,7 @@
 // Hero configuration on the homepage
 
+import { getPermalink } from '~/utils/permalinks';
+
 const hero = {
   // If the entire hero section should be enabled or not
   enabled: true,
@@ -7,18 +9,15 @@ const hero = {
   // Hero title with HTML support
   title: {
     enabled: true, // If the title should be enabled or not
-    text: `Free template for<span class="text-accent dark:text-white highlight"> Astro 2.0</span> + Tailwind CSS + GitHub Pages`,
+    text: `<span class="dark:text-white highlight">Caragol Foundation</span>`,
   },
 
   // Hero subtitle with HTML support
   subtitle: {
     enabled: true, // If the subtitle should be enabled or not
     text: `<span class="hidden sm:inline">
-    <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 2.0
-    + Tailwind CSS.</span
-    >
-    <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span> Suitable for Startups,
-    Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs.`,
+    The <span class="font-semibold">Caragol Foundation</span> is a 501(c) non-profit organization that helps to protect the environment and support vulnerable populations.</span
+  >`,
   },
 
   // First CTA block
@@ -26,21 +25,21 @@ const hero = {
     // Enable or disable first CTA
     enabled: true,
     // CTA text
-    text: 'Get template',
+    text: 'Learn more',
     // CTA link
-    href: 'https://github.com/grantbirki/astrowind',
+    href: getPermalink('/about'),
     // Target html <a> tag
-    target: '_blank',
+    target: '_self',
     // Rel html <a> tag
-    rel: 'noopener',
+    rel: [],
     // CTA icon
-    icon: 'tabler:download',
+    icon: 'tabler:book',
   },
 
   // Second CTA block (optional)
   callToAction2: {
     // Enable or disable second CTA
-    enabled: true,
+    enabled: false,
     // CTA text
     text: 'Learn more',
     // CTA link
@@ -57,9 +56,9 @@ const hero = {
     // If the image should be enabled or not
     enabled: true,
     // Image source
-    src: import('~/assets/images/hero.png'),
+    src: import('~/assets/images/hero.jpg'),
     // Image alt text
-    alt: 'AstroWind Hero Image',
+    alt: 'caragolfoundation hero image',
   },
 };
 
