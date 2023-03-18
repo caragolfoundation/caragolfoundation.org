@@ -69,7 +69,7 @@ const team = {
         // website: '#',
         // twitter: '#',
         instagram: 'https://www.instagram.com/leahcaragol/',
-        facebook: '#',
+        // facebook: '#',
         // linkedin: '#',
         github: 'https://github.com/leahcaragol',
       },
