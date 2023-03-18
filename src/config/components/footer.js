@@ -28,10 +28,10 @@ const footerData = {
   ],
 
   // Secondary links to be displayed in the footer
-  // secondaryLinks: [
-  //   { text: 'Terms', href: getPermalink('/terms') },
-  //   { text: 'Privacy Policy', href: getPermalink('/privacy') },
-  // ],
+  secondaryLinks: [
+    // { text: 'Terms', href: getPermalink('/terms') },
+    // { text: 'Privacy Policy', href: getPermalink('/privacy') },
+  ],
 
   // A list of social links to be displayed in the footer
   socialLinks: [
