@@ -12,7 +12,7 @@ const footerData = {
       title: 'Resources',
       // List of links to be displayed in the section
       links: [
-        { text: 'Team', href: '#' },
+        { text: 'Team', href: getPermalink('/team') },
         { text: 'Blog', href: getBlogPermalink() },
         { text: 'Open Source', href: 'https://github.com/caragolfoundation' },
       ],
@@ -28,10 +28,10 @@ const footerData = {
   ],
 
   // Secondary links to be displayed in the footer
-  // secondaryLinks: [
-  //   { text: 'Terms', href: getPermalink('/terms') },
-  //   { text: 'Privacy Policy', href: getPermalink('/privacy') },
-  // ],
+  secondaryLinks: [
+    // { text: 'Terms', href: getPermalink('/terms') },
+    // { text: 'Privacy Policy', href: getPermalink('/privacy') },
+  ],
 
   // A list of social links to be displayed in the footer
   socialLinks: [

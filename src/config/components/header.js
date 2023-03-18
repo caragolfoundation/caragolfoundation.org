@@ -18,6 +18,10 @@ const headerData = {
           text: 'Contact',
           href: getPermalink('/contact'),
         },
+        {
+          text: 'Team',
+          href: getPermalink('/team'),
+        },
       ],
     },
 
