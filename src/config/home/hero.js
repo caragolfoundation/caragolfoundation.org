@@ -31,7 +31,7 @@ const hero = {
     // Target html <a> tag
     target: '_self',
     // Rel html <a> tag
-    rel: [],
+    rel: '',
     // CTA icon
     icon: 'tabler:book',
   },

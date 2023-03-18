@@ -38,7 +38,7 @@ const headerData = {
   //     // can be 'button', 'primary', or 'ghost'
   //     type: 'button',
   //     // HTML rel attribute
-  //     rel: [],
+  //     rel: '',
   //     // HTML target attribute
   //     target: '_blank',
   //   },

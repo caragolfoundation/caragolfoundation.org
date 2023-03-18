@@ -2,7 +2,7 @@
 
 const content = {
   // If the entire content component should be enabled
-  enabled: true,
+  enabled: false,
 
   // Configuration for the primary section of the content component (the first and larger section)
   primary: {
