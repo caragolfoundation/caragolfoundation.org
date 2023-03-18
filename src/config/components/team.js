@@ -18,7 +18,7 @@ const team = {
       // The job title of the first member
       title: 'Co-Founder',
       // The avatar of the first member
-      avatar: 'https://avatars.githubusercontent.com/u/7899881?s=60&v=4',
+      avatar: '',
       // Social links of the first member
       social: {
         // website: '#',
@@ -35,7 +35,7 @@ const team = {
       // The job title of the first member
       title: 'Co-Founder',
       // The avatar of the first member
-      avatar: 'https://avatars.githubusercontent.com/u/3055425?v=4',
+      avatar: '',
       // Social links of the first member
       social: {
         // website: '#',
