@@ -9,9 +9,10 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
+    "bootstrap": "npm install && npm run astro sync && npm run astro check",
     "format": "prettier -w .",
     "format-ci": "prettier --check .",
-    "lint:eslint": "eslint . --ext .js,.ts,.astro"
+    "lint:eslint": "eslint . --ext .js,.jsx,.ts,.astro"
   },
   "devDependencies": {
     "@astrojs/image": "^0.16.0",
@@ -43,7 +44,7 @@
     "typescript": "^4.9.5"
   },
   "engines": {
-    "node": ">=16.12.0"
+    "node": ">=19.7.0"
   },
   "dependencies": {
     "@astrojs/react": "^2.1.0",
