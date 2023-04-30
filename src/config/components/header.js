@@ -22,6 +22,10 @@ const headerData = {
           text: 'Team',
           href: getPermalink('/team'),
         },
+        {
+          text: 'Gallery',
+          href: getPermalink('/gallery'),
+        },
       ],
     },
 

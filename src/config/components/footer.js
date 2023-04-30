@@ -15,6 +15,7 @@ const footerData = {
         { text: 'Team', href: getPermalink('/team') },
         { text: 'Blog', href: getBlogPermalink() },
         { text: 'Open Source', href: 'https://github.com/caragolfoundation' },
+        { text: 'Gallery', href: getPermalink('/gallery') },
       ],
     },
     {
