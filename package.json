@@ -20,7 +20,7 @@
     "@astrojs/partytown": "^1.1.0",
     "@astrojs/rss": "^2.2.0",
     "@astrojs/sitemap": "^1.2.0",
-    "@astrojs/tailwind": "^3.1.0",
+    "@astrojs/tailwind": "^3.1.2",
     "@astrolib/analytics": "^0.3.0",
     "@astrolib/seo": "^0.3.0",
     "@fontsource/inter": "^4.5.15",
@@ -47,7 +47,7 @@
     "node": ">=19.7.0"
   },
   "dependencies": {
-    "@astrojs/react": "^2.1.0",
+    "@astrojs/react": "^2.1.2",
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
     "@mui/icons-material": "^5.11.11",
