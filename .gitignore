@@ -20,9 +20,8 @@ tmp/
 # macOS-specific files
 .DS_Store
 
-# package-lock.json
-pnpm-lock.yaml
-
 .astro/
 
 .vscode/
+
+tmp/
