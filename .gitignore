@@ -21,6 +21,7 @@ tmp/
 .DS_Store
 
 .astro/
+.cache/image/_astro/
 
 .vscode/
 
