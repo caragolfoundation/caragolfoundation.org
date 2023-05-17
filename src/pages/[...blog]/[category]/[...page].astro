@@ -12,7 +12,7 @@ import { CATEGORY_BASE } from '~/utils/permalinks';
 export async function getStaticPaths({ paginate }) {
   if (BLOG?.disabled || BLOG?.category?.disabled) {
     return [];
-  };
+  }
 
   const posts = await fetchPosts();
   const categories = new Set();
