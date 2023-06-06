@@ -19,4 +19,4 @@ jobs:
         id: unlock-on-merge
         with:
           unlock_on_merge_mode: "true" # <-- indicates that this is the "Unlock on Merge Mode" workflow
-          environment_targets: "github-pages
+          environment_targets: "github-pages"
