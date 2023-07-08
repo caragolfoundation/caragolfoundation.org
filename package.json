@@ -32,7 +32,7 @@
     "@iconify-json/tabler": "^1.1.80",
     "@tailwindcss/typography": "^0.5.9",
     "@typescript-eslint/eslint-plugin": "^5.59.9",
-    "@typescript-eslint/parser": "^5.59.8",
+    "@typescript-eslint/parser": "^5.60.1",
     "astro": "^2.7.2",
     "astro-compress": "^1.1.35",
     "astro-icon": "^1.0.0-next.2",
@@ -47,7 +47,7 @@
     "sharp": "^0.31.3",
     "svgo": "2.8.0",
     "tailwindcss": "^3.1.2",
-    "typescript": "^5.0.3"
+    "typescript": "^5.1.6"
   },
   "engines": {
     "node": ">=19.7.0"
@@ -57,9 +57,9 @@
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.11.11",
-    "@mui/material": "^5.13.3",
+    "@mui/material": "^5.13.6",
     "@types/react": "^18.0.37",
-    "@types/react-dom": "^18.2.4",
+    "@types/react-dom": "^18.2.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-photo-album": "^2.0.4"
