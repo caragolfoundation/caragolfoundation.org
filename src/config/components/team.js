@@ -49,8 +49,7 @@ const team = {
       name: 'Ian Caragol',
       nameLink: null,
       title: 'Board Member',
-      avatar:
-        'https://media.licdn.com/dms/image/C4E03AQHmdyJQkB5gTA/profile-displayphoto-shrink_400_400/0/1595873634804?e=1684368000&v=beta&t=VeNfugVfevrxFpoZBIyq2UwHIHOTAnPFbOVTLcEUtA4',
+      avatar: '/assets/ian.jpg',
       social: {
         // website: '#',
         // twitter: '#',
@@ -64,8 +63,7 @@ const team = {
       name: 'Leah Caragol',
       nameLink: null,
       title: 'Secretary',
-      avatar:
-        'https://media.licdn.com/dms/image/C4E03AQEg2sdMi3bFPA/profile-displayphoto-shrink_400_400/0/1649268916153?e=1684368000&v=beta&t=KdNyF5rF4ic9gep3puUILla82ZIcddV5mtxf-muQJVI',
+      avatar: '/assets/leah.jpg',
       social: {
         // website: '#',
         // twitter: '#',
@@ -79,8 +77,7 @@ const team = {
       name: 'Grant Birkinbine',
       nameLink: 'https://birki.io',
       title: 'Web Developer',
-      avatar:
-        'https://media.licdn.com/dms/image/C5603AQH_1ow6RpwKRA/profile-displayphoto-shrink_400_400/0/1661623022105?e=1684368000&v=beta&t=9gOCM0Fbd2xUsnXc8VNZL6AP4deZqkswxpJsyyanVPg',
+      avatar: '/assets/grant.jpg',
       social: {
         website: 'https://birki.io',
         twitter: 'https://twitter.com/grantbirki',
