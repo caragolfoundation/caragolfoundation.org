@@ -21,18 +21,18 @@
             "type": "Link"
         },
         {
-            "label": "Contact Us",
-            "altText": "Contact",
-            "url": "/contact",
+            "label": "Blog",
+            "altText": "Blog",
+            "url": "/blog",
             "icon": "arrowRight",
             "iconPosition": "right",
             "style": "secondary",
             "type": "Link"
         },
         {
-            "label": "Blog",
-            "altText": "Blog",
-            "url": "/blog",
+            "label": "Contact Us",
+            "altText": "Contact",
+            "url": "/contact",
             "icon": "arrowRight",
             "iconPosition": "right",
             "style": "secondary",
