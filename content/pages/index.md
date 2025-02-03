@@ -5,7 +5,7 @@ sections:
   - type: GenericSection
     title:
       text: The Caragol Foundation
-      color: text-dark
+      color: text-primary
       type: TitleBlock
     subtitle: Subtitle goes here
     text: >
