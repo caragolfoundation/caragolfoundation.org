@@ -34,7 +34,7 @@
             "altText": "",
             "links": [
                 {
-                    "label": "Dropdown item",
+                    "label": "Current Projects",
                     "url": "/",
                     "icon": "arrowRight",
                     "iconPosition": "right",
